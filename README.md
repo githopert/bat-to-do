@@ -5,11 +5,11 @@ A primitive TO-DO list system written in Batch.
 
 ## Features
 
-* A simple interface consisting of 2 commands (`show` and `edit`).
-* Use your favorite text editor: `vim`, `nvim`, `subl`, `notepad`, ...
+* The script interface has only **2** commands (`show` and `edit`).
+* You can use your favorite text editor: `vim`, `nvim`, `subl`, `notepad`, ...
 * The script automatically creates today's entry.
 * The script automatically transfers the undone tasks from yesterday's entry.
-* The script uses TXT-files to store your tasks. They form the history of your daily productivity.
+* The script stores your tasks in TXT-files that form the history of your daily productivity.
 
 
 ## Installation
@@ -30,5 +30,10 @@ A primitive TO-DO list system written in Batch.
 * `todo SHOW 13-06-2023` - shows the entry for the specified date (if it exists).
 * `todo EDIT 13-06-2023` - similar to the two previous commands.
 * Running any command of this script after 00:00 AM will automatically create an entry for a new day.
+
+For the TO-DO lists, use the following syntax:
+* `[ ] Your task...` - uncompleted tasks.
+* `[/] Your task...` - partially completed tasks.
+* `[x] Your task...` - completed tasks.
 
 (*I have not used this script with other date formats. So, I do not know how it will handle them!*) 
